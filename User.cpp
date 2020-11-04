@@ -10,7 +10,7 @@ using namespace std;
 
 User::User(){ // default constructor
     username = ""; // sets username to blank string
-    numRatings = 0; // sets numRatings to 0
+    numRatings = size; // sets numRatings to 0
     for(int i = 0; i < size; i++){ //sets all values in the array to 0
         ratings[i] = 0;
     }
@@ -35,7 +35,7 @@ void User::setUsername(string username_1){
 }
 
 int User::getRatingAt(int index){
-    if(index > numRatings || index < 0){return -1;} // checks if index exists
+    if(index >= numRatings || index < 0){return -1;} // checks if index exists
     else{
         return ratings[index]; //returns rating at index
     }

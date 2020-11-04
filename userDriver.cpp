@@ -36,6 +36,5 @@ int main(){
     cout << user2.getUsername() << endl;
     cout << user2.getRatingAt(0) << endl; //should be 1 if worked, 2 if didnt
     cout << user2.getNumRatings() << endl; // should be 8
-    cout << user2.getSize() << endl;
-
+    cout << user2.getSize() << endl; // should be 50
 }

@@ -15,7 +15,7 @@ public:
     User(); // default constructor
     User(string username, int numratings, int ratings[]);//parametrized constructor
     string getUsername() const; // username getter
-    void setUsername(string username_1); //username setter
+    void setUsername(string username_1); //usernamesetter
     int getRatingAt(int index); // rating getter
     bool setRatingAt(int index, int value);// sets the rating of a specific index to whatever is in "value" 
     int getNumRatings() const; //gets the number of ratings
